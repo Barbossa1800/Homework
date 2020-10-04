@@ -8,9 +8,9 @@ namespace Lab5
         {
             Matrix matrix = new Matrix();
             var mat = matrix.CreateMatrix();
-            matrix.SumMainSideDiagonaluty(ref mat);
-            matrix.SumMainDiaginalyty(ref mat);
-            matrix.SumD(ref mat);
+            matrix.SumMainSideDiagonaluty( mat);
+            matrix.SumMainDiaginalyty( mat);
+            matrix.SumD( mat);
         }
     }
 }
