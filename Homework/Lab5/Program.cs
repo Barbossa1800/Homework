@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Lab5
 {
@@ -6,6 +7,8 @@ namespace Lab5
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            Console.WriteLine("Лабораторна робота №5, варіант-14, Медко М.М.");
             Matrix matrix = new Matrix();
             var mat = matrix.CreateMatrix();
             matrix.SumMainSideDiagonaluty( mat);
