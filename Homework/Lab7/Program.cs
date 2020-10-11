@@ -10,7 +10,6 @@ namespace Lab7
         {
             Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine("Лабораторна робота №7, варіант-14, Медко М.М.");
-            
             Lists lists = new Lists();
             for (int i = 0; i < 5; i++)
             {
