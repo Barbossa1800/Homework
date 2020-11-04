@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab7", "Lab7\Lab7.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab8", "Lab8\Lab8.csproj", "{F3774DF8-1649-4F77-BD16-630CC000EF6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Independent work", "Independent work\Independent work.csproj", "{FDEEA56A-64E7-4DD4-9BD5-936C5036D3C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Independent work", "Independent work\Independent work.csproj", "{FDEEA56A-64E7-4DD4-9BD5-936C5036D3C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
