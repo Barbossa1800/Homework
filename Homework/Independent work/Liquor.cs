@@ -7,20 +7,6 @@ namespace Independent_work
 {
     public class Liquor
     {
-        //private double cost;
-        //private int endurance;
-        //private string country;
-        //private string producer;
-        //private double value;
-        //private string name;
-
-
-        //public double Cost => cost;
-        //public int Eendurance => endurance;
-        //public string Country => country;
-        //public string Producer => producer;
-        //public string Name => name;
-        //public double Value => value;
         public double Cost { get; set; }
         public int Eendurance { get; set; }
         public string Country { get; set; }
