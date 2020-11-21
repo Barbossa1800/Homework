@@ -7,44 +7,25 @@ namespace TestLab
     {
         static void Main(string[] args)
         {
-            int N;
-            Int32.TryParse(Console.ReadLine(), out N);
-            int[,] array = new int[N, N];
-            Random random = new Random();
-            int rand;
-            int sum = 0;
-            for (int i = 0; i < N; i++)
-            {
-                for (int j = 0; j < N; j++)
-                {
-                    rand = random.Next(1, 3);
-                    array[i, j] = rand;
-                    Console.Write($"{array[i, j]} \t");
-
-                }
-                Console.WriteLine();
-            }
-            for (int i = 0; i < N; i++)
-            {
-                sum += array[i, i];
-            }
-            for (int i = 0; i < N; i++)
-            {
-                for (int j = 0; j < N; j++)
-                {
-
-                    if (j == N - i - 1)
-                    {
-                        sum += array[i, j];
-                    }
-                    if (N % 2 != 0 && i == N / 2 + 1 && j == N / 2 + 1)
-                    {
-                        sum -= array[N / 2 + 1, N / 2 + 1];
-                    }
-                }
-            }
-            Console.Write(sum);
-            Console.ReadKey();
+            Content con = new Content("dfgkbh");
+            Content con1 = "elrgerhg";
+            Content con2 = 1;
+            Console.WriteLine(con1.Text);
+            Test test = new Test(1);
+            Test test1 = new Test("");
         }
+    }
+    public class Content
+    {
+        public string Text { get; }
+        public int Id { get; }
+        public Content(string text) { Text = text; }
+        public Content(int id) { Id = id; }
+        public static implicit operator Content (string text)=> new Content(text);
+        public static implicit operator Content (int id)=> new Content(id);
+    }
+    public class Test
+    {
+        public Test(Content content) { }
     }
 }

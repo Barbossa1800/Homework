@@ -9,18 +9,32 @@ namespace Lab8
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            Garage garage = new Garage("JhonFm", new System.Collections.Generic.List<Cars>
+            Garage garage = new Garage();
+            int value = default;
+            while (true)
             {
-                new Cars("Audi", "R8", "Black"),
-                new Cars("Lamba", "Aventador", "Black"),
-                new Cars("Tesla", "Model S", "White"),
-                new Cars("Tesla", "Model 3", "White"),
-                new Cars("Tesla", "Model X", "White")
-            });
-            var allCars = garage.GetAllCars();
-            garage.ShowCars(allCars);
-            var car = garage.GetCarsByModel(Console.ReadLine()); //R8
-            Console.WriteLine(car.Count); //1
+                Console.WriteLine("1)Вибір за назвою\t2)Вибір за швидкістью\t3)Вибір за рокому випуску\t4)Видалити машину за назвою");
+                Console.Write("Ваш вибір: ");
+                value = Convert.ToInt32(Console.ReadLine());
+                switch (value)
+                {
+                    case 1:
+                        garage.ChoiceCarToName();
+                        break;
+                    case 2:
+                        garage.ChoiceCarToSpeed();
+                        break;
+                    case 3:
+                        garage.ChoiceCarToYearProduction();
+                        break;
+                    case 4:
+                        garage.RemoveCar();
+                        break;
+                    default:
+                        Console.WriteLine("Error!");
+                        break;
+                }
+            }
         }
     }
 }

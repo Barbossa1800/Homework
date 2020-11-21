@@ -6,25 +6,13 @@ namespace Lab8._1
 {
     public class Cars
     {
-
-        private string id = Guid.NewGuid().ToString();
-        private string brand;
-        private string model;
-        private string color;
-
-        public string Id => id;
-        public string Brand => brand;
-        public string Model => model;
-        public string Color => color;
-        public Cars(string brand, string model, string color)
-        {
-            this.brand = brand;
-            this.model = model;
-            this.color = color;
-        }
+        public string Name { get; set; }
+        public string Color { get; set; }
+        public short Speed { get; set; }
+        public string YearOfProdaction { get; set; }
         public override string ToString()
         {
-            return $"Brand: {brand}, Model: {model}, Color: {color}";
+            return $"Name: { Name}, Color: {Color}, Speed: {Speed}, YearOfProduction: {YearOfProdaction}";
         }
     }
 }
