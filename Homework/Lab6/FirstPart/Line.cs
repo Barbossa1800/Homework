@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Lab6
+namespace Lab6.FirstPart
 {
-    public class LineRec
+    public class Line
     {
         public void RecursionString(string[] sts)
         {
@@ -17,7 +17,14 @@ namespace Lab6
                 }
                 else Console.WriteLine("Error");
             }
-            
+        }
+        public void RecursionString()
+        {
+            string word = "Dut for ever!";
+            for (int i = word.Length - 1; i >= 0; i--)
+            {
+                Console.Write(word[i]);
+            }    
         }
     }
 }

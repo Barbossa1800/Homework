@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
+using System.Text;
 
-namespace Lab6.task
+namespace Lab6.FirstPart
 {
     public class Number
     {
@@ -12,7 +12,7 @@ namespace Lab6.task
             Array.Reverse(nums);
             foreach (var item in nums)
             {
-                Console.Write($"{item}\n");
+                Console.WriteLine(item);
             }
         }
         public void RecursionNumber(int numebr)
