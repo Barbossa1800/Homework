@@ -8,7 +8,7 @@ namespace TestLab
         static void Main(string[] args)
         {
             Content con = new Content("dfgkbh");
-            Content con1 = "elrgerhg";
+            Content con1 = "elrgerhg1";
             Content con2 = 1;
             Console.WriteLine(con1.Text);
             Test test = new Test(1);
