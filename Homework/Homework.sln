@@ -28,7 +28,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Sem", "1_Sem", "{7E7CF971
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_Sem", "2_Sem", "{FB2AB374-4875-4372-827C-7B4CC4B4BB4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChat", "..\..\..\..\2 SM\C#\SimpleChat\SimpleChat\SimpleChat.csproj", "{FADECC7D-CA9B-496F-B99D-BE03C0212335}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChat", "2_Sem\SimpleChat\SimpleChat\SimpleChat.csproj", "{FADECC7D-CA9B-496F-B99D-BE03C0212335}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
